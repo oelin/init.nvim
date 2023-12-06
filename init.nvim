@@ -1,0 +1,27 @@
+set number
+set autoindent
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set smarttab
+set mouse=a
+set encoding=UTF-8
+
+call plug#begin()
+
+Plug 'preservim/nerdtree'
+Plug 'folke/zen-mode.nvim'
+Plug 'folke/twilight.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'sainnhe/sonokai'
+
+call plug#end()
+
+if has('termguicolors')
+        set termguicolors
+endif
+
+let g:sonokai_style = 'andromeda'
+let g:sonokai_better_performance = 1
+
+colorscheme sonokai
